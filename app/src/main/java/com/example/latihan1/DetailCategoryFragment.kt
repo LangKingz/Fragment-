@@ -48,8 +48,10 @@ class DetailCategoryFragment : Fragment() , View.OnClickListener{
 
         if(arguments != null){
             val categoryName = arguments?.getString(EXTRA_NAME)
+            val categoryDesc = arguments?.getString(EXTRA_DESCRIPTION)
             tvCategoryname.text = categoryName
-            tvCategoryDescription.text = descripton
+            tvCategoryDescription.text = categoryDesc
+
         }
 
         btnProfile.setOnClickListener(this)

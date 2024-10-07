@@ -32,10 +32,12 @@ class CatagoryFragment : Fragment() , View.OnClickListener{
 
                 val bundle = Bundle()
                 bundle.putString(DetailCategoryFragment.EXTRA_NAME,"LifeStyle")
+                bundle.putString(DetailCategoryFragment.EXTRA_DESCRIPTION,"Kategori ini akan berisi produk-produk lifestyle")
                 val description = "Kategori ini akan berisi produk-produk lifestyle"
 
                 detailCategoryFragment.arguments = bundle
                 detailCategoryFragment.descripton = description
+                detailCategoryFragment.arguments = bundle
 
                 val frameManager = parentFragmentManager
                 frameManager?.beginTransaction()?.apply {
